@@ -4,3 +4,7 @@ hello master module
 
 ## Considerações
 - os sub-modulos são repositórios independentes dos master
+
+## Comandos úteis
+- `git submodule update --init --recursive` baixar submodulos e inicia-los caso necessário
+- `git config --global alias.update '!git pull && git submodule update --init --recursive'` cria um atalho para o comando acima mais um pull do repositório principal, assim ao digitar `git update` todas as operações necessarias serão realizadas para atualizar o repositório pai e os filhos
